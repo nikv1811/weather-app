@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css"
-import {Container} from 'reactstrap'
+// import {Container} from 'reactstrap'
 import { fetchWeather } from './FetchWeather';
 import './App.css';
 
@@ -22,7 +22,7 @@ const App = () => {
     return (
       <div className="col-sm-12 col-md-10 offset-md-1 my-5 text-center">
         <div className="card d-flex align-items-center" >
-        <img className="card-img img-fluid height-auto" src="https://images.pexels.com/photos/2931915/pexels-photo-2931915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+        <img className="card-img img-fluid height-auto" alt="" src="https://images.pexels.com/photos/2931915/pexels-photo-2931915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
             <div className="card-img-overlay">
             <div className="m-7 card-header form-group">
             <input className="form-control" type="text" placeholder="Search..."value={query}onChange={(e) => setQuery(e.target.value)}onKeyPress={search}/>
